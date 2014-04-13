@@ -1,16 +1,79 @@
+
+
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
 * {
 	border: 0px solid lightblue;
 }
 
+/*selectivly remove*/
+html {
+  height: 100%;
+}
+
+body {
+	position: relative;
+	margin: 0;
+	padding-bottom: 40px;
+	min-height: 100%;
+}
+
+.content {
+  margin: 0 auto;
+}
+
+/* header */
+
 .page-wrap {
+	min-height: 100%;
 	font-family: arial;
 	font-size: 12px;
+	margin-bottom: -40px;
 }
 
 .header {
 	height: 60px;
 	padding: 10;
 }
+
+
+
+/* footer */
+
+.page-footer {
+	position: absolute;
+  	bottom: 0;
+	background: #f2f2f2;
+  	height: 40px; 
+	border-top: 1px solid #e4e4e4;
+  	display: block;
+  	width: 100%;
+}
+
+/*
+.page-footer, .page-wrap:after {
+
+  height: 40px; 
+}
+
+.page-footer {
+  background: #f2f2f2;
+  border-top: 1px solid #e4e4e4;
+  display: block;
+  width: 100%;
+}
+
+@media screen and ( max-height: 400px ) {
+	.page-footer {
+		position: absolute;
+	}
+
+}
+*/
+
+
+/* links */
 
 a {
 	text-decoration: none;
@@ -23,6 +86,30 @@ a:hover {
 	color: black;
 }
 
+
+/* images */
+
+#grid-icon {
+	height: 23px;
+	width: 23px;
+}
+
+#logo-container {
+	height: 200px;
+	position: relative;
+}
+
+#logo-image {
+	width: 300px;
+	position: absolute;
+	left: 50%;
+	margin-left: -150px;
+	bottom: 0px;
+}
+
+
+/* lists */
+
 ul {
 	list-style: none;
 	margin: 0;
@@ -33,13 +120,16 @@ li {
 	display: inline;
 }
 
+
+/* form */
+
+
+
+
+/* size and positioning */
+
 .float-right {
 	float: right;
-}
-
-#grid-icon {
-	height: 23px;
-	width: 23px;
 }
 
 .float-left {
@@ -71,19 +161,5 @@ li {
 }
 
 
-clear {
-	clear: right;
-}
 
-#logo-container {
-	height: 200px;
-	position: relative;
-}
 
-#logo-image {
-	width: 300px;
-	position: absolute;
-	left: 50%;
-	margin-left: -150px;
-	bottom: 0px;
-}
