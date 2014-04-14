@@ -8,15 +8,17 @@
 <body>
 	<div class="content">
 		<div class="header">
-			<div class="float-right top-outside">
-				<div class="float-left top-inside inline-block">
-					<div class="inline-block margin-links"><a href="#">+You</a></div>
-					<div class="inline-block margin-links"><a href="#">Gmail</a></div>
-					<div class="inline-block margin-links"><a href="#">Images</a></div>
-				</div>
-				<div class="float-right">
-					<div class="inline-block margin-links"><a href="#"><img id="grid-icon" src="images/grid.png"></a></div>
-					<div class="inline-block margin-links"><a href="#">Sign In</a></div>
+			<div class="position-right top-outside">
+				<div class="position-relative">
+					<div class="position-left">
+						<div class="inline-block margin-links"><a href="#">+You</a></div>
+						<div class="inline-block margin-links"><a href="#">Gmail</a></div>
+						<div class="inline-block margin-links"><a href="#">Images</a></div>
+						<div class="inline-block margin-links"><a href="#"><img id="grid-icon" src="images/grid.png"></a></div>
+					</div>
+					<div class="position-right">
+						<div class="inline-block margin-links"><a class="login-button" href="#">Sign In</a></div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -26,26 +28,27 @@
 		<div>
 			<form action="#" method="post">
 				<input type="text" name="Search">
-				<input type="submit" name="google-search" value="Google Search">
-				<input type="submit" name="google-lucky" value="I'm Feeling Lucky">
+				<input class="button float-left" type="submit" name="google-search" value="Google Search">
+				<input class="button float-right" type="submit" name="google-lucky" value="I'm Feeling Lucky">
 			</form>
 		</div>
 		<div class="search-button">
 		</div>
 	</div>
-	<footer class="page-footer">
+	<footer class="page-footer padding-sides">
 		<div class="float-left inline-block">
-			<ul>
-				<li class="inline-block"><a href="#">Advertising</a></li>
-				<li class="inline-block"><a href="#">Business</a></li>
-				<li class="inline-block"><a href="#">About</a></li>
-			</ul>
+				<ul>
+					<li class="inline-block"><a href="#">Advertising</a></li>
+					<li class="inline-block"><a href="#">Business</a></li>
+					<li class="inline-block"><a href="#">About</a></li>
+				</ul>
 		</div>
 		<div class="float-right">
-			<ul>
-				<li class="inline-block"><a href="#">Updated Privacy & Terms</a></li>
-				<li class="inline-block"><a href="#">Settings</a></li>
-			</ul>
-		</div>	
+				<ul>
+					<li class="inline-block"><a href="#">Updated Privacy & Terms</a></li>
+					<li class="inline-block"><a href="#">Settings</a></li>
+				</ul>
+		</div>
+	</footer>	
 </body>
 </html>
