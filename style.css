@@ -2,6 +2,7 @@
 
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
 
+/* MAIN STRUCTURE */
 
 html {
     position: relative;
@@ -9,10 +10,10 @@ html {
 }
 
 body {
-	margin: 10px 35px;
-    font-family: arial;
+	margin: 10px 35px 90px;
+	font-family: arial;
 	font-size: 12px;
-	min-width: 900px;
+	min-width: 975px;
 }
 
 header {
@@ -20,13 +21,13 @@ header {
 	border: 1px solid lightrey;
 }
 
-
 footer {
     position: absolute;
     left: 0;
     bottom: 0;
     height: 40px;
     width: 100%;
+    min-width: 975px;
 	border-top: 1px solid #e4e4e4;
 	background: #f2f2f2;
 	line-height: 40px;
@@ -131,7 +132,7 @@ input:first-child {
 	border: 1px solid #b2b2b2;
 	background: url(data:image/gif;base64,R0lGODlhHAAmAKIHAKqqqsvLy0hISObm5vf394uLiwAAAP///yH5BAEAAAcALAAAAAAcACYAAAO9eLpMIMYIQJi9DcYtKv6KtnHgB4yoAZSXKAyDy1rjoAzjzOQLrx8+4OanCAZnxiExGSEKmz3lj2lwUq3SZ3WZPbKuXGgxu9t4tLYDTkpIRQILF0x2G4lWipM7gj/oJQUkcXsCDCIFATULBCIcZ2tvB3QLDxETFnR/BgU/gRt9jX0gnpYMkJZpFzEoqQqJKAIBaQOVKHAXr3t7txgBjboSvB8EpLoFZywOAo3LFE5lYs/QW9LT1TRk1V7S2xYJADs=) no-repeat scroll left;
 	background-size: 14px 19px;
-	background-position: right;
+	background-position: 98%;
 }
 
 .button {
@@ -156,19 +157,20 @@ input:first-child {
 }
 
 input:hover {
-	border: 1px solid #c7c7c7;
+	border: 1px solid #808080;
 	box-shadow: 0 1px 0 0 lightgrey;
 }
 
+div > input:hover {
+	box-shadow: none;
+}
+
 input:active {
-	border: 1px solid blue;
+	border: 1px solid lightblue;
 }
 
-#form-input{
-	float: left;
+input:focus {
+	border: 1px solid #1369e9;
+	outline: none;
 }
-
-
-
-
 
