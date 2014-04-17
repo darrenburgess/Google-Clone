@@ -1,22 +1,25 @@
 /* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
-/*
+
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
-*/
+
 
 html {
     position: relative;
     min-height: 100%;
 }
 
-header {
-	line-height: 60px;
-}
-
 body {
-    margin: 0 0 40px; /* bottom = footer height */
+	margin: 10px 35px;
     font-family: arial;
 	font-size: 12px;
+	min-width: 900px;
 }
+
+header {
+	line-height: 50px;
+	border: 1px solid lightrey;
+}
+
 
 footer {
     position: absolute;
@@ -32,7 +35,7 @@ footer {
 /* LINKS */
 
 a {
-	display: block;
+	text-decoration: none;
 	color: #666666;	
 }
 
@@ -50,8 +53,8 @@ a:hover {
 }
 
 #logo-container {
-	height: 250px;
 	position: relative;
+	height: 250px;
 	margin-bottom: 25px;
 }
 
@@ -64,9 +67,7 @@ a:hover {
 }
 
 .login-button {
-	height: 25px;
-  	width: 70px;
-  	padding: 4px;
+  	padding: 7px 10px;
   	font: bold 13px Arial;
   	color: white;
   	background-color: #4486f8;
@@ -74,28 +75,53 @@ a:hover {
 
 .login-button:hover {
 	text-decoration: none;
-	color: blue;
-	box-shadow: 0 1 1 #e4e4e4;
+	color: white;
+	box-shadow: 0 1px 0 0 grey;
+}
+
+.button {
+	height: 28px;
+	font: bold 11px Arial;
+	display: block;
+	margin: 0px;
+	border: 1px solid #d8d8d8;
+	background-color: #f3f3f3;
+	border-radius: 3px;
+	color: #444444;
 }
 
 
 
 /* LISTS */
 
-ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
+li {
+	display: inline-block;
+	margin-left: 15px;
 }
 
-li {
-	display: inline;
+header ul {
+	text-align: right;
+}
+
+header li {
+	margin-top: 0;
+}
+
+footer > ul {
+	float: left;
+}
+
+footer ul:last-child {
+	float: right;
 	margin-right: 35px;
 }
 
-li:last-child {
-	margin-right: 60px;
+footer li {
+	display: inline-block;
 }
+
+
+
 
 
 /* FORM */
@@ -116,20 +142,12 @@ input:first-child {
 	border: 1px solid #b2b2b2;
 }
 
-.button {
-	height: 28px;
-	font: bold 11px Arial;
-	display: block;
-	margin: 0px;
-	border: 1px solid #d8d8d8;
-	background-color: #f3f3f3;
-	border-radius: 3px;
-	color: #444444;
 
-}
 
 .button:nth-child(2) {
-	margin-left: 175px;
+	float: left;
+	margin-left: 100px;
+	margin-right: 20px;
 }
 
 .button:nth-child(3) {
@@ -138,6 +156,7 @@ input:first-child {
 
 input:hover {
 	border: 1px solid #c7c7c7;
+	box-shadow: 0 1px 0 0 grey;
 }
 
 input:active {
@@ -151,27 +170,6 @@ input:active {
 	height: 23px;
 	width: 17px;
 }
-
-
-/* size and positioning */
-
-.float-right {
-	float: right;
-}
-
-.float-left {
-	float: left;
-}
-
-.inline-block {
-	display: inline-block;
-}
-
-.padding-sides {
-	padding-left: 30px;
-  	padding-right: 30px;
-}
-
 
 
 
